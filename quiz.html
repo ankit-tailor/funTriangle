@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .quiz {
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .radio {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #03203C;
+            border-radius: 15px;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 0.5rem 3rem;
+            cursor: pointer;
+        }
+
+        .score {
+            border: 2px solid #03203C;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        input {
+            display: inline;
+            width: 10%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="list">
+            <li class="list-items">
+                <a class="link" href="/">
+                    Angle of triangle
+                </a>
+            </li>
+            <li class="list-items">
+                <a class="link" href="./hypotenuse.html">
+                    Hypotenuse
+                </a>
+            </li>
+            <li class="list-items">
+                <a class="link" href="./area.html">
+                    Area
+                </a>
+            </li>
+            <li class="list-items">
+                <a class="active link" href="./quiz.html">
+                    Quiz
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="container">
+        <div class="quiz">
+            <form class="formQuiz">
+
+                <div class="radio">
+                    <label class="label question">1. If a triangle has angles 100<sup>0</sup>, 50<sup>0</sup>,
+                        30<sup>0</sup>. Is it an obtuse triangle?</label>
+
+                    <label for="radio1" class="label"><input required type="radio" id="radio1" name="que1"
+                            value="option1">
+                        yes</label>
+
+                    <label for="radio2" class="label"><input required type="radio" id="radio2" name="que1"
+                            value="option2">
+                        no</label>
+                </div>
+
+                <div class="radio">
+                    <label class="label question">2. A triangle has angles 60<sup>0</sup>, 60<sup>0</sup>,
+                        60<sup>0</sup>.
+                        Is it an equilateral triangle?</label>
+
+                    <label for="radio3" class="label"><input required type="radio" id="radio3" name="que2"
+                            value="option1">
+                        yes</label>
+
+                    <label for="radio4" class="label"><input required type="radio" id="radio4" name="que2"
+                            value="option2">
+                        no</label>
+                </div>
+
+                <div class="radio">
+                    <label class="label question">3. If a triangle has angles 25<sup>0</sup>, 75<sup>0</sup>,
+                        80<sup>0</sup>. Is it an acute triangle?</label>
+
+                    <label for="radio5" class="label"><input required type="radio" id="radio5" name="que3"
+                            value="option1">
+                        yes</label>
+
+                    <label for="radio6" class="label"><input required type="radio" id="radio6" name="que3"
+                            value="option2">
+                        no</label>
+                </div>
+
+                <div class="radio">
+                    <label class="label question">4. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of
+                        triangle?</label>
+
+                    <label for="radio7" class="label"><input required type="radio" id="radio7" name="que4"
+                            value="option1">
+                        Equilateral</label>
+
+                    <label for="radio8" class="label"><input required type="radio" id="radio8" name="que4"
+                            value="option2">
+                        Isosceles</label>
+
+                    <label for="radio9" class="label"><input required type="radio" id="radio9" name="que4"
+                            value="option3">
+                        Scalene</label>
+                </div>
+
+                <div class="radio">
+                    <label class="label question">5. What is third angle of triangle where angle1 = 90 and angle2 = 30
+                        ?</label>
+
+                    <label for="radio10" class="label"><input required type="radio" id="radio10" name="que5"
+                            value="option1">
+                        40</label>
+
+                    <label for="radio11" class="label"><input required type="radio" id="radio11" name="que5"
+                            value="option2">
+                        60</label>
+
+                    <label for="radio12" class="label"><input required type="radio" id="radio12" name="que5"
+                            value="option3">
+                        80</label>
+                </div>
+
+                <button class="btn" type="submit">Submit</button>
+            </form>
+            <h2>Score will be shown here-</h2>
+            <div class="score">For each correct answer you will get 1 point</div>
+    </section>
+    </div>
+    </div>
+    </section>
+    <script src="./quiz.js"></script>
+</body>
+
+</html>
