@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Fun with triangles</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="list">
+            <li class="list-items">
+                <a class="active link" href="/">
+                    Angle of triangle
+                </a>
+            </li>
+            <li class="list-items">
+                <a class="link" href="./hypotenuse.html">
+                    Hypotenuse
+                </a>
+            </li>
+            <li class="list-items">
+                <a class="link" href="./area.html">
+                    Area
+                </a>
+            </li>
+            <li class="list-items">
+                <a class="link" href="./quiz.html">
+                    Quiz
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h2 style="text-align:center">Enter the angles in below input boxes and we will tell you if
+            those angles make a
+            Triangle</h2>
+        <form class="form">
+            <input type="number" placeholder="Enter angle1(in degree)" class="angleOfTriagnle" min="1" max="180"
+                required>
+            <input type="number" placeholder="Enter angle2(in degree)" class="angleOfTriagnle" min="1" max="180"
+                required>
+            <input type="number" placeholder="Enter angle3(in degree)" class="angleOfTriagnle" min="1" max="180"
+                required>
+            <button type="submit" class="submitBtn">Is traingle?</button>
+        </form>
+        <div class="result">
+            <h3 class="resultContent">Your result will be shown here!</h3>
+        </div>
+    </section>
+    <script src="./angle.js"></script>
+</body>
+
+</html>
