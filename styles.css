@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --primary-color: #03203C;
+    --secondary-color: #120E43;
+    --white: #ffffff;
+    --dark-gray: #d1d1d1
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--white)
+
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.list {
+    display: flex;
+}
+
+.list-items {
+    list-style-type: none;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.link {
+    color: var(--white);
+    text-decoration: none
+}
+
+.active {
+    color: var(--dark-gray)
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+input {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    width: 82%;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    padding: 1rem
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+}
+
+.result {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
